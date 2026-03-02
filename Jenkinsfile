@@ -8,6 +8,14 @@ pipeline {
                }
          }
 
+         stage('build docker image') {
+              steps{
+                  script{
+                     sh 'docker build -t aniediogo/buymore:1 .'
+                     
+                }
+            }
+
 
        
        }
