@@ -39,7 +39,7 @@ pipeline {
                 withCredentials([string(credentialsId: 'id', variable: 'cred')]) {
                 sh 'docker login -u igwej408 -p ${cred}'
 }
-                sh 'docker push aniediogo/buymore:1'
+                sh 'docker push igwej408/buymore:1'
              }
 
          }
