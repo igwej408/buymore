@@ -11,7 +11,7 @@ pipeline {
          stage('build docker image') {
               steps{
                   script{
-                     sh 'docker build -t aniediogo/buymore:1 .'
+                     sh 'docker build -t igwej408/buymore:1 .'
                      
                 }
             }
